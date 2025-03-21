@@ -1,0 +1,55 @@
+%tipo né
+\documentclass[12pt]{article}
+%==================================================================
+%pacotes
+\input{PreAmbulo/10Pacotes}
+%==================================================================
+%foia
+\input{PreAmbulo/20Margens}
+%==================================================================
+%contadores e medidas
+\input{PreAmbulo/22LengthsAndCounters}
+%==================================================================
+%titles & alineas
+\usepackage[shortlabels]{enumitem}%listas
+\usepackage{titlesec}%Formatar titulos
+\input{PreAmbulo/50Titulos}
+%==================================================================
+%cabeçalho e rodapé
+\input{PreAmbulo/60Pagstyle}
+%==================================================================
+%newcommands
+\input{PreAmbulo/100Newcommands}
+%==================================================================
+%------------------Cut??
+%indentifymodel
+%====================
+\nome{Leonidas Caetano da Silva}
+\idade{19}
+\bairro{Emiliano Perneta}
+\cidade{Pinhais}
+\email{leonidascaetano.silva@gmail.com}
+\TelefoneCelular[https:wa.me/41997288411]{(41) 99728-8411}
+\TelefoneFixo{(41) 3669-6196}
+\Linkedin{https://linkedin.com/in/leonidas-caetano-a766b322a}
+\VagaDePreferencia{Produção, Financeiro}
+%--------------------
+%=========================================================================================
+\usepackage[
+			linktoc = all,
+			hidelinks,
+			pdfpagemode=FullScreen,
+			pdftitle=\hyperreftit,
+			pdfauthor=\hyperrefautores,
+			pdfcreator={Leonidas Caetano},
+			pdfsubject=\hyperrefsubtit,
+			pdfkeywords={\hyperrefkeywords},
+			]{hyperref}%links
+\linespread{1.5}\selectfont
+\begin{document}
+\input{PreAmbulo/120SetsIniciais}
+%==================================================================
+a
+%==================================================================
+\end{document}
+%=========================================================================================

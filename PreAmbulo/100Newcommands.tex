@@ -1,0 +1,33 @@
+%==================================================================
+%novos comandos
+%==================================================================
+%definemodel
+\newcommand{\name}{\hspace*{1cm}}
+\newcommand{\age}{}
+\newcommand{\neigh}{\hspace*{1cm}}
+\newcommand{\city}{}
+\newcommand{\imail}{}
+\newcommand{\cttone}{\hspace*{1cm}}
+\newcommand{\ctttwo}{\hspace*{1cm}}
+\newcommand{\lndin}{\hspace*{1cm}}
+\newcommand{\Preference}{\hspace*{1cm}}
+%========================
+\newcommand{\nome}[1]{\renewcommand{\name}{\bfseries #1}}
+\newcommand{\idade}[1]{\renewcommand{\age}{#1}}
+\newcommand{\bairro}[1]{\renewcommand{\neigh}{#1}}
+\newcommand{\cidade}[1]{\renewcommand{\city}{#1}}
+\newcommand{\email}[1]{\renewcommand{\imail}{\href{mailto:#1}{#1}}}
+\newcommand{\TelefoneCelular}[2][1]{\renewcommand{\cttone}{\href{#1}{#2}}}
+\newcommand{\TelefoneFixo}[1]{\renewcommand{\ctttwo}{#1}}
+\newcommand{\Linkedin}[1]{\renewcommand{\lndin}{\url{#1}}}
+\newcommand{\VagaDePreferencia}[1]{\renewcommand{\Preference}{#1}}
+%==================================================================
+%datas
+\newcommand{\data}{%
+%\ifnum\the\day<10 0\fi\the\day/%
+%\ifnum\the\month<10 0\fi\the\month/%
+\the\year%
+}
+%==================================================================
+
+\typeout{precomandos feitos}

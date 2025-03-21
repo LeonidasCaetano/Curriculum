@@ -1,0 +1,49 @@
+%==================================================================TITULOS
+%formato
+\titleformat{\section}[hang]{\bfseries\normalsize\centering}{}{0em}{\MakeUppercase}
+%espaçamento
+\titlespacing{\section}{0em}{-.7cm}{36pt}
+%formato  do numero
+\renewcommand{\thesection}{}
+%=================================================================
+\renewcommand{\labelenumi}{\alph{enumi}\hfill)}
+\renewcommand{\labelenumii}{--}
+
+\renewcommand{\labelitemi}{\textbullet}
+\renewcommand{\labelitemii}{-}
+
+\setlist[enumerate,1]{align = left,
+topsep = 0cm,
+itemindent = 2cm,
+leftmargin = 0cm, 
+labelwidth = .5cm,
+labelsep = 1em, 
+labelindent = 0cm, 
+listparindent = \parindent,
+itemsep = 0cm,
+parsep = \parskip}
+
+\setlist[enumerate,2]{align = left,
+topsep = 0cm,
+itemindent = 2cm,  
+leftmargin = 0cm, 
+labelwidth = .5cm,
+labelsep = 1em, 
+labelindent = 0cm, 
+listparindent = \parindent,
+itemsep = 0cm,
+parsep = \parskip}
+
+\setlist[itemize,1]{align = left,
+topsep = 0cm,
+itemindent = 0cm,  
+leftmargin = \caixalargsec, 
+labelwidth = \caixalargsec,
+labelsep = 0em, 
+labelindent = 0cm, 
+listparindent = \parindent,
+itemsep = \distanciasecs,
+parsep = \parskip}
+
+
+\typeout{titulos e listas atualizados}

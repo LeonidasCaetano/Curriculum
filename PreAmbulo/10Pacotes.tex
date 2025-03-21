@@ -1,0 +1,44 @@
+%==================================================================
+%pacotes
+\usepackage[english,brazil]{babel}%Pacote BR
+%=========================================================
+\usepackage[normalem]{ulem}%sublinhar, etc
+\usepackage{soul}
+%=========================================================
+\usepackage{mathtools}%equações matematicas
+\usepackage{amsfonts}%letras matematicas
+%=========================================================
+%Tabelas
+\usepackage{array}%basicão
+%=========================================================
+\usepackage[T1]{fontenc}%acentos
+\usepackage{setspace}%definir distancia entre linhas, etc
+\usepackage{anyfontsize}
+\usepackage{indentfirst}%recuo 1º paragrafo
+\usepackage{parskip}%distancia entre paragrafos
+%=========================================================
+%\usepackage{qrcode}%QRCode
+%=========================================================
+\usepackage{calc}%operação com variaveis
+\usepackage[absolute]{textpos}%posicionar textos livremente
+%=========================================================
+\ifdefined\directlua
+	\usepackage{fontspec}%mudar fonte
+	\usepackage{pdflscape}
+	\usepackage{luacode}
+\fi
+\ifdefined\pdfoutput
+	\usepackage{helvet}
+	\renewcommand{\familydefault}{\sfdefault}%Arial
+	\usepackage{pdflscape}
+\fi
+\ifdefined\XeTeXversion
+	\usepackage{mathspec}%mudar fonte
+\fi
+%\usepackage{contour}%fonte aberta
+%=========================================================
+\usepackage{pgffor}%loop option 1 
+%\usepackage{forloop}%loop option 2
+%==================================================================
+
+\typeout{Pacotes carregados}
